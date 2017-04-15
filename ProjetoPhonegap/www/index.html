@@ -5,14 +5,10 @@
 		<meta charset="utf-8" />
 		<link type="text/css" href="static/style.css" rel="stylesheet"/>
 		 <script type="text/javascript" src="static/script.js">
-		 <script type="text/javascript" src="cordova.js"></script>
-   		<script type="text/javascript" src="js/index.js"></script>
+		 <script type="text/javascript" src="cordova.js">
+   		<script type="text/javascript" src="js/index.js">
    		<script type="text/javascript">
-      	 
-  
      </script> 
-		
-		
 	</head>
 		<body>
 			<div id="mySidenav" class="sidenav">
@@ -23,15 +19,13 @@
   			<a href="pages/social.html">Redes sociais</a>
   			<a href="pages/cronograma.html">Cronograma</a>
 		</div>
+		<span id="trace" onclick="openNav()">&#9776;</span>
 
-		<!-- Use any element to open the sidenav -->
-		<span id="trace"onclick="openNav()">&#9776;</span>
-
-		<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
 		<div id="main">
-  			<img id="logo" src="static/img/logo.png" />
+  			<img id="logo" src="static/img/logocomp.png" />
 			<br/>         
-			</div>  
-			app.initialize();         
+		</div>  
+
+		app.initialize();         
 	</body>     
 </html>
