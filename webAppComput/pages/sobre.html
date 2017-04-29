@@ -23,20 +23,61 @@
                
             </div>
             <div data-role="main">
-                <h2 style="text-align: center">O evento:......<br>Workshops e Palestras.....</h2>
+                <h2 style="text-align: center">O evento:......</h2>
+                <ul>
+                    <h2>WorkShops que seram ministrados</h2>
+                    <li>Desenvolvimento Android
+                    <a href="https://www.eventbrite.com.br" target="_blank" class="ui-btn ui-btn-inline ui-corner-all" >Inscreva-se</a></li>
+                    <li>Introdução ao Arduino</li>
+                     <a style="margin: 0 auto" href="https://www.eventbrite.com.br" target="_blank" class="ui-btn ui-btn-inline ui-corner-all">Inscreva-se</a>
+                </ul>
+                
+                <ul>
+                    <h2>Palestras</h2>
+                    <li>GETA</li>
+                    <li>outra..</li>
+                    <li>outra..</li>
+                </ul>
                 <br>
                 <p style="text-align: center">Falando sobre a computação amostra..</p>
             </div>
+            <!-- Depois de tudo ser colocado, fazemos a inscrição! -->
+
+            <h3 style="text-align: center"> Tem alguma ideia para algum projeto para expor na feira?<br><br> Inscreva seu projeto! 
+                  <a class="ui-btn ui-btn-inline ui-corner-all" tyle="color: white" href="#inscricaoprojeto" data-transition="pop">Inscrição de projeto</a></h3>
+             
             
-            <div data-role="navbar">
-                <ul>
-                    <li><a style="color: white" href="https://www.eventbrite.com" data-transition="pop">Inscreva-se</a></li>
-                </ul>
-            </div>
+
+
             <div data-role="footer">
                 <p style="font-size: 13px;text-align:center">Cesupa - Belém</p>
             </div>
 
+        </div>
+
+        <div data-role="page" id="inscricaoprojeto" data-theme="b" style="margin: 0 auto;">
+            <div data-role="header">
+              <h1>Inscrição</h1>
+              </div>
+            <form method="post" action="#">
+                <div class="ui-field-contain">
+                    <label for="projeto">Titulo do Projeto:</label>
+                    <input type="text" name="projeto" id="fullname">
+                    <br><br><br>
+                    <label for="objetivo">Objetivo:</label>
+                    <input type="text" name="objetivo" id="objetivo">
+                    <br><br><br>
+                    <label for="Categoria">Categoria</label>
+                    <!-- Radio buttons -->
+                    <input type="radio" name="Categoria" id="radio-choice-1" value="produto"/>
+                    <label for="radio-choice-1">Produto</label><br><br><br>
+                    <label for="Categoria">         </label>
+                    <input type="radio" name="Categoria" id="radio-choice-2" value="Iniciacao"/>
+                    <label for="radio-choice-2">Iniciação Científica</label><br><br><br>
+                    <label for="nomeAutor">Nome do Autor do Projeto</label>
+                    <input type="text" name="nomeAutor"  hint="Nome completo">
+                </div>
+            </form>
         </div>
             
 

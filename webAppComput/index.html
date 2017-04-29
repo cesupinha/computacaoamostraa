@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
         <title> Computação Amostra </title>
+        <link rel="stylesheet" href="/static/estilo.css" >
         <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
         <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
@@ -26,31 +27,29 @@
 
             <div data-role="main">
                 <h2 style="text-align: center">Computação Amostra - Cesupa</h2>
-                <br>
-                <p >A décima terceira edição da Computação Amostra movimentará a unidade José Malcher dos dias 27 a 30 de maio de 2017. <br>A tradicional feira de Ciência e Tecnologia reuniu mais de 200 alunos dos cursos de Ciência da Computação, Sistemas de Informação e Engenharia da Computação com a apresentação de projetos tecnológicos desenvolvidos sob o tema "Integrando Engenharia, Ciência e Gestão em TIC para soluções tecnológicas sustentáveis".<br></p>
+                
+                <p style="font-size:15px;text-align:center" >A décima terceira edição da Computação Amostra movimentará a unidade José Malcher dos dias 24 a 27 de maio de 2017.<br><br>A tradicional feira de Ciência e Tecnologia reune mais de 200 alunos dos cursos de Ciência da Computação, Sistemas de Informação e Engenharia da Computação com a apresentação de projetos tecnológicos desenvolvidos sob o tema "Integrando Engenharia, Ciência e Gestão em TIC para soluções tecnológicas sustentáveis".<br></p>
 
-                <div class="slideimgs" style="max-width:400px">
+                <div class="slideimgs" style="max-width:400px;text-align:center" >
                     <img style="display: none" src="https://www.technobuffalo.com/wp-content/uploads/2015/04/batman-suit-002-200x200.jpg" class="carrousel"/>
                     <img style="display: none" src="http://www.firsthdwallpapers.com/uploads/2014/01/Batman-200x200.jpg" class="carrousel"/>
                 </div>
-                
-                <p>
-                “A Computação Amostra tem ganhado bastante maturidade nestes últimos anos. Especialmente nesta edição. Nós conseguimos agregar o curso da Engenharia da Computação. Essa é a primeira vez, além da Ciência da Computação e Sistemas de Informação que a Engenharia da Computação participa do projeto”, avaliou o professor Marcos Paulo Sousa, coordenador do curso de Ciência da Computação e um dos organizadores da Amostra.</p>
             </div>
             
             <div data-role="footer">
                 <p style="font-size: 13px;text-align:center">Cesupa - Belém</p>
             </div>
-
+            <!-- Texto de apresentação -->
 
         </div>
             
 
     </body>
     <script>
+    //Script para slide
             var myIndex = 0;
             carousel();
-
+                //LEMBRA QUE O SLIDE TA BUGADO!!!
             function carousel() {
                 var i;
                 var x = document.getElementsByClassName("carrousel");
@@ -59,7 +58,7 @@
                 }
                 myIndex++;
                 if (myIndex > x.length) {myIndex = 1}    
-                $(x[myIndex-1]).fadeIn('slow');  
+                $(x[myIndex-1]).fadeIn('fast');  
                 setTimeout(carousel, 2000); // Change image every 2 seconds
             }
     </script>
